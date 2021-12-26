@@ -1,0 +1,29 @@
+.footer__residence {
+  width: 231px;
+}
+
+.residence__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.residence__link {
+  @extend %link;
+  display: block;
+  color: $footer-contacts-color;
+  font-style: normal;
+
+  transition: color $first-transition;
+
+  &--white {
+    color: $primary-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

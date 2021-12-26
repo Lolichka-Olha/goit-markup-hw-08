@@ -1,0 +1,61 @@
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+%button {
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+
+  background-color: $accent-color;
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition: background-color $first-transition, box-shadow $first-transition;
+}
+
+%visually__hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+%social__block {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px 12px;
+  border-radius: 50%;
+
+  fill: currentColor;
+}
+
+%footer__text {
+  margin-bottom: 20px;
+
+  color: $primary-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

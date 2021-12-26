@@ -1,0 +1,67 @@
+.card__list {
+  display: flex;
+}
+
+.card__item {
+  width: calc((100% - 3 * #{$card-gallery-gap}) / 4);
+  margin-right: $card-gallery-gap;
+
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  box-shadow: $card-box-shadow;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.card__content {
+  padding: 30px 0;
+  text-align: center;
+
+  background-color: $primary-color;
+}
+
+.card__title {
+  margin-bottom: 10px;
+
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.card__text {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-social__list {
+  @extend %flex;
+  padding: 0 32px;
+}
+
+.team-social__item {
+  margin-right: $social-link-gap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team-social__link {
+  @extend %social__block;
+
+  background: $primary-color;
+  color: $social-client-color;
+
+  transition: color $first-transition, background-color $first-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-color;
+  }
+}

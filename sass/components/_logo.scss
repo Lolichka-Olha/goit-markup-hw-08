@@ -1,0 +1,24 @@
+.logo {
+  @extend %link;
+  display: block;
+  color: $logo-color;
+  font-family: $logo-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &--accent {
+    color: $accent-color;
+  }
+}
+
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: $primary-color;
+}

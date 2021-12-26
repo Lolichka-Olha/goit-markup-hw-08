@@ -1,0 +1,34 @@
+.contact__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__item {
+  margin-right: $card-gallery-gap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact__link {
+  @extend %flex;
+  @extend %link;
+  padding: 32px 0;
+
+  font-weight: 500;
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+
+  transition: color $first-transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

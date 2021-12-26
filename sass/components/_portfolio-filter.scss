@@ -1,0 +1,39 @@
+.filter__list {
+  @extend %flex;
+  min-width: 611px;
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  margin-right: $filter-btn-gap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.filter__btn,
+.filter__btn--current {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: transparent;
+
+  background-color: $secondary-bg-color;
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  transition: color $first-transition, background-color $first-transition,
+    box-shadow $first-transition;
+
+  &--current,
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-color;
+    box-shadow: $filter-btn-box-shadow;
+  }
+}

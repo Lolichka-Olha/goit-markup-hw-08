@@ -1,0 +1,36 @@
+.footer__social {
+  width: 206px;
+  padding-top: 12px;
+  padding-bottom: 40px;
+  margin-left: 70px;
+  margin-right: 93px;
+}
+
+.social__text {
+  @extend %footer__text;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  margin-right: $social-link-gap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  @extend %social__block;
+  background: $footer-social-bg-color;
+  color: $primary-color;
+
+  transition: background-color $first-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}

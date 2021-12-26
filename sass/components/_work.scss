@@ -1,0 +1,28 @@
+.work__list {
+  display: flex;
+}
+
+.work__item {
+  position: relative;
+  width: calc((100% - 2 * #{$card-gallery-gap}) / 3);
+  margin-right: $card-gallery-gap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.work__title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  text-align: center;
+
+  background-color: $work-title-bg-color;
+  color: $primary-color;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
