@@ -40,15 +40,14 @@
 
 .team-social__list {
   @extend %flex;
-  padding: 0 32px;
 }
 
-.team-social__item {
+.team-social__item:not(:last-child) {
   margin-right: $social-link-gap;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 
 .team-social__link {

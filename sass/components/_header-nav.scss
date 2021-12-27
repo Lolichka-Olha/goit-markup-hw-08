@@ -1,13 +1,10 @@
 .header__list {
   @extend %flex;
+  margin-left: 93px;
 }
 
-.header__item {
+.header__item:not(:last-child) {
   margin-right: 50px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .header__link {

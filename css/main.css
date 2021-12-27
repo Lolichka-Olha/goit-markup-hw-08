@@ -149,7 +149,6 @@ p {
 .header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 93px;
 }
 
 .footer__logo {
@@ -157,12 +156,12 @@ p {
   color: #ffffff;
 }
 
-.header__item {
-  margin-right: 50px;
+.header__list {
+  margin-left: 93px;
 }
 
-.header__item:last-child {
-  margin-right: 0;
+.header__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header__link {
@@ -480,16 +479,8 @@ p {
   line-height: 1.19;
 }
 
-.team-social__list {
-  padding: 0 32px;
-}
-
-.team-social__item {
+.team-social__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.team-social__item:last-child {
-  margin-right: 0;
 }
 
 .team-social__link {
