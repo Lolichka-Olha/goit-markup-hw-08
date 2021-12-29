@@ -1,20 +1,25 @@
 .footer__subscription {
-  width: 570px;
-  padding: 12px 0 34px;
+  // width: 570px;
+  // padding: 12px 0 34px;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .subscription__text {
   @extend %footer__text;
 }
 
-.subscription__field {
-  @extend %flex;
-}
+// .subscription__field {
+//   // @extend %flex;
+// }
 
 .subscription__input {
-  min-width: 358px;
+  // min-width: 358px;
+  width: 100%;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
+  // margin-right: 12px;
 
   background-color: transparent;
   color: $primary-color;

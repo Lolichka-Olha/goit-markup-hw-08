@@ -1,14 +1,21 @@
 .client__list {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * #{$card-gallery-gap});
+  margin-left: calc(-1 * #{$card-gallery-gap});
 }
 
 .client__item {
-  width: calc((100% - 5 * #{$card-gallery-gap}) / 6);
-  margin-right: $card-gallery-gap;
+  flex-basis: calc();
+  flex-basis: calc(100% / 2 - #{$card-gallery-gap});
+  margin-top: $card-gallery-gap;
+  margin-left: $card-gallery-gap;
+  // width: calc((100% - 5 * #{$card-gallery-gap}) / 6);
+  // margin-right: $card-gallery-gap;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   // margin-right: 0;
+  // }
 }
 
 .client__link {

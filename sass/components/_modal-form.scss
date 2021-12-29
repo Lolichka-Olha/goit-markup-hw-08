@@ -5,7 +5,8 @@
   color: $secondary-text-color;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
+  // line-height: 1.15;
 }
 
 .form__field {
@@ -83,7 +84,11 @@
 
 .form__checkbox-field {
   @extend %flex;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 
 .form__checkbox-input {
@@ -112,6 +117,13 @@
     background-image: url(../images/icon-check1.svg);
     background-size: contain;
     background-origin: border-box;
+  }
+}
+
+.form__checkbox-label {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 

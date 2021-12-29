@@ -7,6 +7,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -28,41 +32,68 @@ p {
 }
 
 .page__header {
+  position: relative;
+  min-width: 320px;
   border-bottom: 1px solid $border-header-color;
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1200px;
+  // min-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
 
-  &__inner {
-    @extend %flex;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  // &__inner {
+  //   @extend %flex;
+  //   justify-content: space-between;
+  // }
+}
+
+// .footer .container__inner {
+// }
+
+.section {
+  padding: 60px 0;
+
+  // padding: 94px 0;
+
+  // &:nth-child(2) {
+  //   padding-bottom: 0;
+  // }
+}
+
+.work__section {
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  &:nth-child(2) {
-    padding-bottom: 0;
-  }
-
-  &:nth-child(4) {
-    background-color: $secondary-bg-color;
-  }
+.team__section {
+  background-color: $secondary-bg-color;
 }
 
 .section__title {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 
   color: $secondary-text-color;
-  font-size: 36px;
-  line-height: 1.17;
+  // font-size: 36px;
+  // line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
 
   &--hidden {
     @extend %visually__hidden;

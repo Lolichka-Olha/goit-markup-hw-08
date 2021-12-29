@@ -1,9 +1,11 @@
 .footer__social {
   width: 206px;
-  padding-top: 12px;
-  padding-bottom: 40px;
-  margin-left: 70px;
-  margin-right: 93px;
+  margin: 0 auto 60px;
+  text-align: center;
+  // padding-top: 12px;
+  // padding-bottom: 40px;
+  // margin-left: 70px;
+  // margin-right: 93px;
 }
 
 .social__text {
@@ -14,12 +16,8 @@
   display: flex;
 }
 
-.social__item {
+.social__item:not(:last-child) {
   margin-right: $social-link-gap;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .social__link {

@@ -1,22 +1,27 @@
-.card__list {
-  display: flex;
-}
+// .card__list {
+//   // display: flex;
+// }
 
 .card__item {
-  width: calc((100% - 3 * #{$card-gallery-gap}) / 4);
-  margin-right: $card-gallery-gap;
+  // width: calc((100% - 3 * #{$card-gallery-gap}) / 4);
+  // margin-right: $card-gallery-gap;
 
-  border-radius: 0px 0px 4px 4px;
   overflow: hidden;
+  border-radius: 0px 0px 4px 4px;
   box-shadow: $card-box-shadow;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: $card-gallery-gap;
 }
 
 .card__content {
-  padding: 30px 0;
+  // padding: 30px 0;
+  padding: 30px 0 24px;
   text-align: center;
 
   background-color: $primary-color;
@@ -44,10 +49,6 @@
 
 .team-social__item:not(:last-child) {
   margin-right: $social-link-gap;
-
-  // &:last-child {
-  //   margin-right: 0;
-  // }
 }
 
 .team-social__link {
