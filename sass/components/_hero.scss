@@ -15,9 +15,12 @@
 }
 
 .hero__section {
-  // padding: 200px 0;
   padding: 118px 0;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
@@ -27,18 +30,15 @@
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
-  // font-size: 44px;
-  // line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
   @extend %button;
-
-  &:hover,
-  &:focus {
-    background-color: $btn-accent-color;
-    box-shadow: $btn-box-shadow;
-  }
 }

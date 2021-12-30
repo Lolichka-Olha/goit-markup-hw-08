@@ -27,6 +27,26 @@
         >
 
         <!-- navigation -->
+        <button
+          class="menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon__close"
+              href="./images/icons.svg#icon-close40"
+            ></use>
+            <use class="icon__menu" href="./images/icons.svg#icon-menu40"></use>
+          </svg>
+        </button>
         <div class="menu-container" id="menu-container" data-menu>
           <nav class="header__nav">
             <ul class="list header__list">
@@ -49,14 +69,17 @@
           <ul class="list contact__list">
             <li class="contact__item">
               <a href="mailto:info@devstudio.com" class="contact__link">
-                <svg class="contact__icon" width="16" height="12">
+                <svg class="contact__icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-envelope1"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
             <li class="contact__item">
-              <a href="tel:+380961111111" class="contact__link">
+              <a
+                href="tel:+380961111111"
+                class="contact__link contact__link--blue"
+              >
                 <svg class="contact__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone1"></use>
                 </svg>
@@ -103,26 +126,6 @@
             </li>
           </ul>
         </div>
-        <button
-          class="menu-btn"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg
-            class="icon"
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              class="icon__close"
-              href="./images/icons.svg#icon-close40"
-            ></use>
-            <use class="icon__menu" href="./images/icons.svg#icon-menu40"></use>
-          </svg>
-        </button>
       </div>
     </header>
 
@@ -167,7 +170,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="gallery__content">
+                <div class="gallery__content gallery__content--big">
                   <h2 class="gallery__title">Технокряк</h2>
                   <p class="gallery__text">Веб-сайт</p>
                 </div>

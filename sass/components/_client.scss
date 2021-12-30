@@ -6,16 +6,17 @@
 }
 
 .client__item {
-  flex-basis: calc();
   flex-basis: calc(100% / 2 - #{$card-gallery-gap});
   margin-top: $card-gallery-gap;
   margin-left: $card-gallery-gap;
-  // width: calc((100% - 5 * #{$card-gallery-gap}) / 6);
-  // margin-right: $card-gallery-gap;
 
-  // &:last-child {
-  //   // margin-right: 0;
-  // }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - #{$card-gallery-gap});
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - #{$card-gallery-gap});
+  }
 }
 
 .client__link {

@@ -7,8 +7,10 @@
   font-size: 24px;
   line-height: 1.17;
 
-  // font-size: 26px;
-  // line-height: 1.19;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 
   &--accent {
     color: $accent-color;
@@ -18,8 +20,15 @@
 .header__logo {
   padding: 16px 0;
   width: 134px;
-  // padding-top: 24px;
-  // padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0 25px;
+    width: 145px;
+  }
 }
 
 .footer__logo {

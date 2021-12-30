@@ -33,13 +33,10 @@ p {
 
 .page__header {
   position: relative;
-  min-width: 320px;
   border-bottom: 1px solid $border-header-color;
 }
 
 .container {
-  max-width: 1200px;
-  // min-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
 
@@ -55,23 +52,31 @@ p {
     width: 1200px;
   }
 
-  // &__inner {
-  //   @extend %flex;
-  //   justify-content: space-between;
-  // }
+  &__inner {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+    }
+  }
 }
 
-// .footer .container__inner {
-// }
+.footer .container__inner {
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
 
 .section {
   padding: 60px 0;
 
-  // padding: 94px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
 
-  // &:nth-child(2) {
-  //   padding-bottom: 0;
-  // }
+    &:nth-child(2) {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .work__section {
@@ -85,15 +90,18 @@ p {
 }
 
 .section__title {
-  // margin-bottom: 50px;
   margin-bottom: 30px;
-  text-align: center;
-
   color: $secondary-text-color;
-  // font-size: 36px;
-  // line-height: 1.17;
   font-size: 28px;
   line-height: 1.18;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
 
   &--hidden {
     @extend %visually__hidden;

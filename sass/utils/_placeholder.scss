@@ -26,6 +26,12 @@
   letter-spacing: 0.06em;
 
   transition: background-color $first-transition, box-shadow $first-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-accent-color;
+    box-shadow: $btn-box-shadow;
+  }
 }
 
 %visually__hidden {

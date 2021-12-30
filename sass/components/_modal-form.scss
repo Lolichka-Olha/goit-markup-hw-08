@@ -6,7 +6,10 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
-  // line-height: 1.15;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form__field {
@@ -49,6 +52,11 @@
     color: $modal-placeholder-color;
     line-height: 1.14;
     letter-spacing: 0.01em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 }
 
@@ -62,6 +70,15 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   cursor: pointer;
+
+  transition: color $first-transition;
+
+  @media screen and (max-width: 767px) {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
 }
 
 .form__icon {

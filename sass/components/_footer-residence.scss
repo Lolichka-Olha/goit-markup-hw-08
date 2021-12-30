@@ -1,13 +1,19 @@
 .footer__residence {
-  // width: 231px;
-  width: 232px;
-  margin: 0 auto 60px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    width: 232px;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+
+  min-width: 231px;
 }
 
 .residence__item:not(:last-child) {
-  // margin-bottom: 9px;
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .residence__link {
