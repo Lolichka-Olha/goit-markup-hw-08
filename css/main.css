@@ -296,9 +296,6 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     background-color: #ffffff;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
@@ -370,7 +367,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .header__nav {
-    margin-bottom: 306px;
+    margin-bottom: auto;
   }
 }
 
